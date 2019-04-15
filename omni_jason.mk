@@ -20,7 +20,7 @@ PRODUCT_RELEASE_NAME := jason
 $(call inherit-product, build/target/product/embedded.mk)
 
 # Inherit from our custom product configuration
-$(call inherit-product, vendor/omni/config/common.mk)
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.hardware.keystore=sdm660 \
@@ -38,3 +38,4 @@ PRODUCT_MODEL := Mi Note 3
 TARGET_VENDOR_PRODUCT_NAME := jason
 TARGET_VENDOR_DEVICE_NAME := jason
 PRODUCT_BUILD_PROP_OVERRIDES += TARGET_DEVICE=jason PRODUCT_NAME=jason
+TARGET_GAPPS_ARCH := arm64
